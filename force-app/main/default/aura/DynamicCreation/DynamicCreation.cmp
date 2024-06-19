@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:attribute name="InputValue" type="string"/>
+    <lightning:input value="{! v.InputValue}" name="inputValue" type="string" label="Enter your Course"/>
+    <br/>
+    <lightning:button variant="success" title="Brand action" label="Add Course" onclick="{! c.addCourse}"/>
+    <br/>
+    {!v.body}
+</aura:component>

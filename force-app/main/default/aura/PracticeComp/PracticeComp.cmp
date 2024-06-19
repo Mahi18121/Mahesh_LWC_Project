@@ -1,0 +1,16 @@
+<aura:component >
+    <aura:attribute name="ValueofA" type="Integer"/>
+    <lightning:input type="Number" name="A_value" value="{! v.ValueofA}" label="Enter A Value"/>
+    
+    <aura:attribute name="ValueofB" type="Integer"/>
+    <lightning:input type="Number" name="B_Value" value="{! v.ValueofB}" label="Enter B Value"/>
+ 
+    <br/>
+    
+    <lightning:button variant="brand" label="Addition" title="Brand action" onclick="{! c.doAdd }" />
+    <lightning:button variant="destructive" label="Subraction" title="Brand action" onclick="{! c.doSub }" />
+    <lightning:button variant="success" label="Multiplication" title="Brand action" onclick="{! c.doMul }" />
+    <lightning:button variant="brand-outline" label="Division" title="Brand action" onclick="{! c.doDiv }" />
+    <lightning:button variant="destructive-text" label="Reminder" title="Brand action" onclick="{! c.doRem }" />
+    
+</aura:component>

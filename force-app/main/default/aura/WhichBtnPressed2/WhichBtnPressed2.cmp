@@ -1,0 +1,9 @@
+<aura:component >
+	<aura:attribute name="WhichBtn" type="string"/>
+    <hr><b></b></hr>
+    <lightning:button variant="brand" title="Brand action" label="Save" onclick="{! c.actBtn}"/>
+    <lightning:button variant="success" title="Brand action" label="Submit" onclick="{! c.actBtn}"/>
+    <lightning:button variant="destructive" title="Brand action" label="Delete" onclick="{! c.actBtn}" />
+    <hr><b></b></hr>
+    <p><b>You clicked : {!v.WhichBtn} Button</b></p>
+</aura:component>

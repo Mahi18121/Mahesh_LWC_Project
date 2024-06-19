@@ -1,0 +1,7 @@
+<aura:component>
+    <aura:attribute name="Description" type="string"/>
+    <aura:handler value="{!this}" name="init" action="{! c.doInit}"/>
+    
+    <h1>Action</h1>
+    <p>{!v.Description}</p>
+</aura:component>

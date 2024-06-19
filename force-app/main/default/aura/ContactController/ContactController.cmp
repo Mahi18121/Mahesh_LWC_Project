@@ -1,0 +1,14 @@
+<aura:component controller="ContactController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    <aura:attribute name="conList" type="contact[]"/>    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:iteration items="{!v.conList}" var="con">
+        <lightning:card title="{!con.Name}" footer="{!con.Title}" iconName="standard:contact">
+            <p class="slds-p-horizontal-small">
+                <a href="#" onclick="{!c.navigateToContact}" data-recordId="{!con.Id}">{!con.Name}</a>
+                <br/>{!con.Email}
+                <br/>{!con.Phone}
+            </p>
+        </lightning:card>
+    </aura:iteration>
+</aura:component>

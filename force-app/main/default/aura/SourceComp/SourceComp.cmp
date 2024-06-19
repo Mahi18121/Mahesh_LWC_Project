@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:registerEvent name="myEvent" type="c:CompEvent" /> 
+    
+    <lightning:input label="Enter First Number" type="number" aura:id="num1" />
+    <lightning:input label="Enter Second Number" type="number" aura:id="num2" />
+    <br/>
+    <lightning:button label="Add" variant="success" onclick="{!c.addNumber}"/>
+</aura:component>
